@@ -45,5 +45,5 @@ fun proportion(adn: String, sequence:String) : Double {
             compteur++
         }
     }
-    return (compteur.toDouble() / (maxPositions +1)) * 100.0
+    return (compteur * seqNorm.length.toDouble() / adnNorm.length.toDouble()) * 100.0
 }
