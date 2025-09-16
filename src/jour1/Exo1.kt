@@ -1,3 +1,5 @@
+package jour1
+
 fun main () {
 println(nomPrenom("John", "Doe"))
 }

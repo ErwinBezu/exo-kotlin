@@ -1,3 +1,5 @@
+package jour1
+
 fun main () {
     val adn = saisirADN()
     println("saisir la séquence:")
@@ -12,8 +14,8 @@ fun main () {
 
     /* Version plus courte pour la science xD
     println(
-        if (verifierADN(sequence))
-            "Pourcentage de \"$sequence\" dans \"$adn\" : ${proportion(adn, sequence)} %"
+        if (jour1.verifierADN(sequence))
+            "Pourcentage de \"$sequence\" dans \"$adn\" : ${jour1.proportion(adn, sequence)} %"
         else
             "Séquence invalide"
     )

@@ -1,3 +1,5 @@
+package jour1
+
 fun main() {
     println(quelleCategorie(5))
     println(quelleCategorie(7))

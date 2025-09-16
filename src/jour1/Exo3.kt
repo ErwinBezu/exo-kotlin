@@ -1,3 +1,5 @@
+package jour1
+
 fun main() {
     quelleHeure()
     quelleHeure("14h00")
