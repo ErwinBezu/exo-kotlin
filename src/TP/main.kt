@@ -15,7 +15,7 @@ fun main() {
     )
 
     for (doc in documents) {
-        doc.showInfo()
+        println(doc.showInfo())
     }
 
     val witcher = documents[0] as Book
@@ -60,4 +60,12 @@ fun main() {
     } catch (e: DocumentNotBorrowedException) {
         println("ERREUR : ${e.message}")
     }
+
+    //BONUS
+    for (doc in documents) {
+        println(doc.showInfo { it.uppercase() })
+        println(doc.showInfo { it.lowercase() })
+        println(doc.showInfo { "[$it]" })
+    }
+
 }

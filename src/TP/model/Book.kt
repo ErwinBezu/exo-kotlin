@@ -16,7 +16,9 @@ class Book (title: String,
     constructor(title: String, author: String, type: Type) :
             this(title, author, 0, 100, type)
 
-    override fun showInfo() = println(" '$title', $author, $publicationDate, $nbPages pages, Genre: $type")
+    override fun showInfo():String {
+        return "'$title', $author, $publicationDate, $nbPages pages, Genre: $type"
+    }
 
     override var isBorrowed: Boolean = false
 
