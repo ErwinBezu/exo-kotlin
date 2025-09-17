@@ -58,7 +58,7 @@ fun case3() {
     notes[troisiemeNom] = 3
     println("Nouvelle note pour $troisiemeNom : ${notes[troisiemeNom]}/20")
 
-    println("Dernier eleve ajouté: ${notes.keys.last()}")
+    println("Dernier eleve ajouté: ${notes[notes.keys.last()]}")
 
 //    println("Liste des élèves: ${notes.toList()}")
     println("Liste des élèves:")
