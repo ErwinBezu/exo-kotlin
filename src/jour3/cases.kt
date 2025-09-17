@@ -5,6 +5,8 @@ fun main() {
     case1()
     println("CAS numéro 2")
     case2()
+    println("CAS numéro 3")
+    case3()
 }
 
 fun case1() {
@@ -38,7 +40,29 @@ fun case2() {
 
         val client = file.removeFirst()
         println("Client en cours de traitement : ${client}")
+        println("Le nombre de clients restant : ${file.size}")
         println("Liste des clients restant : ${file.joinToString(", ")}")
     }
     println("C'est l'heure de l'apéro !!")
+}
+
+fun case3() {
+    val notes = mutableMapOf<String, Int>()
+
+    notes["Ducobu"] = 1
+    notes["Titeuf"] = 0
+    notes["Kid Paddle"] = 6
+    notes["Astérix"] = 20
+
+    val troisiemeNom = notes.keys.elementAt(2)
+    notes[troisiemeNom] = 3
+    println("Nouvelle note pour $troisiemeNom : ${notes[troisiemeNom]}/20")
+
+    println("Dernier eleve ajouté: ${notes.keys.last()}")
+
+//    println("Liste des élèves: ${notes.toList()}")
+    println("Liste des élèves:")
+    for ((nom, note) in notes) {
+        println("$nom - $note/20")
+    }
 }
